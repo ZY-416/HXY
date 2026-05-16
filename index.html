@@ -3,72 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>数字敦煌 - 欢迎来到敦煌世界</title>
+    <title>数字敦煌 - 首页</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="welcome-page">
-    <div class="welcome-container dunhuang-pattern">
-        <header class="welcome-header">
-            <div class="seal-effect">敦·煌</div>
-            <h1 class="welcome-title">数字敦煌</h1>
-            <p class="welcome-subtitle">Digital Dunhuang</p>
-        </header>
+<body>
+    <!-- 版头 -->
+    <header class="site-header">
+        <div class="logo">
+            <div class="logo-text">数字敦煌</div>
+            <div class="logo-subtext">Digital Dunhuang</div>
+        </div>
         
-        <main class="welcome-main">
-            <div class="welcome-content">
-                <p class="welcome-description">
-                    敦煌，丝绸之路上的璀璨明珠，世界文化遗产的瑰宝。<br>
-                    这里保存着跨越千年的佛教艺术、壁画与雕塑，<br>
-                    是中华文明与多元文化交融的历史见证。
-                </p>
-                
-                <div class="welcome-features">
-                    <div class="feature-item">
-                        <i class="fas fa-landmark"></i>
-                        <h3>千年洞窟</h3>
-                        <p>探索莫高窟、榆林窟等世界级文化遗产</p>
-                    </div>
-                    <div class="feature-item">
-                        <i class="fas fa-paint-brush"></i>
-                        <h3>精美壁画</h3>
-                        <p>欣赏跨越十个朝代的佛教艺术珍品</p>
-                    </div>
-                    <div class="feature-item">
-                        <i class="fas fa-history"></i>
-                        <h3>数字保护</h3>
-                        <p>采用先进技术进行文化遗产数字化保存</p>
-                    </div>
-                </div>
-                
-                <div class="welcome-stats">
-                    <div class="stat">
-                        <span class="stat-number">735</span>
-                        <span class="stat-label">个洞窟</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">10</span>
-                        <span class="stat-label">个朝代</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">45000</span>
-                        <span class="stat-label">㎡壁画</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">300</span>
-                        <span class="stat-label">DPI精度</span>
-                    </div>
-                </div>
-                
-                <a href="index.html" class="start-button">
-                    <i class="fas fa-door-open"></i> 开启敦煌之旅
-                </a>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> 首页</a></li>
+                <li><a href="#"><i class="fas fa-mountain"></i> 洞窟</a></li>
+                <li><a href="#"><i class="fas fa-paint-brush"></i> 壁画</a></li>
+                <li><a href="#"><i class="fas fa-search"></i> 检索</a></li>
+                <li><a href="#"><i class="fas fa-map-marked-alt"></i> 寻境敦煌</a></li>
+                <li><a href="article.html"><i class="fas fa-book-open"></i> 文章</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 主内容 -->
+    <main class="main-content">
+        <!-- 主视觉区 -->
+        <section class="home-hero">
+            <h1 class="hero-title">这里让你走进敦煌石窟</h1>
+            <p class="hero-subtitle">探索千年文化遗产，感受佛教艺术魅力</p>
+            
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="搜索洞窟、壁画或关键词（如：飞天、佛像）">
+                <button class="search-button"><i class="fas fa-search"></i> 搜索</button>
             </div>
-        </main>
-        
-        <footer class="welcome-footer">
-            <p>© 2023 数字敦煌文化保护与传承项目 | 让千年敦煌，触手可及</p>
-        </footer>
-    </div>
+            
+            <div class="hero-navigation">
+                <button class="nav-arrow left-arrow"><i class="fas fa-chevron-left"></i></button>
+                <button class="nav-arrow right-arrow"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <!-- 数据展示区域 -->
+        <section class="data-section">
+            <div class="data-card">
+                <div class="data-number">30</div>
+                <div class="data-label">数字化洞窟</div>
+                <div class="data-description">已完成高精度数字化采集</div>
+            </div>
+            <div class="data-card">
+                <div class="data-number">10</div>
+                <div class="data-label">历史朝代</div>
+                <div class="data-description">跨越十个朝代的艺术瑰宝</div>
+            </div>
+            <div class="data-card">
+                <div class="data-number">4430</div>
+                <div class="data-label">㎡壁画面积</div>
+                <div class="data-description">已数字化保护壁画总面积</div>
+            </div>
+            <div class="data-card">
+                <div class="data-number">300</div>
+                <div class="data-label">DPI采集精度</div>
+                <div class="data-description">超高分辨率图像采集</div>
+            </div>
+        </section>
+
+        <!-- 文章预览区域 -->
+        <section class="articles-section">
+            <h2 class="section-title">精选洞窟与文章</h2>
+            
+            <div class="articles-grid">
+                <article class="article-card">
+                    <img src="images/245ku.jpg" 
+                         alt="莫高窟外观" class="article-image">
+                    <div class="article-content">
+                        <h3 class="article-title">莫高窟第245窟</h3>
+                        <p class="article-excerpt">盛唐时期代表性洞窟，保存完好的彩塑和壁画，展现了唐代佛教艺术的巅峰成就...</p>
+                        <a href="article.html" class="read-more">探索详情 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="article-card">
+                    <img src="images/feitian.jpg" 
+                         alt="敦煌壁画" class="article-image">
+                    <div class="article-content">
+                        <h3 class="article-title">飞天艺术研究</h3>
+                        <p class="article-excerpt">敦煌飞天是佛教艺术中的独特创造，其演变历程反映了中西文化交流的历史轨迹...</p>
+                        <a href="#" class="read-more">阅读文章 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="article-card">
+                    <img src="images/sichou.avif" 
+                         alt="敦煌地貌" class="article-image">
+                    <div class="article-content">
+                        <h3 class="article-title">丝绸之路与敦煌</h3>
+                        <p class="article-excerpt">敦煌作为丝绸之路的重要枢纽，见证了东西方文明交流互鉴的辉煌历史...</p>
+                        <a href="#" class="read-more">了解历史 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 特色功能区域 -->
+        <section class="features-section">
+            <h2 class="section-title">数字敦煌特色功能</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-vr-cardboard"></i>
+                    </div>
+                    <h3 class="feature-title">虚拟漫游</h3>
+                    <p class="feature-description">360度全景体验，身临其境探索洞窟内部</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    <h3 class="feature-title">高清细节</h3>
+                    <p class="feature-description">超高分辨率查看壁画细节，发现肉眼难以观察的精彩</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3 class="feature-title">学术研究</h3>
+                    <p class="feature-description">丰富的文献资料和研究成果，助力学术探索</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="feature-title">教育普及</h3>
+                    <p class="feature-description">面向公众的文化教育平台，传承敦煌文化</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 版尾 -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="copyright">
+                <p>© 2023 数字敦煌文化保护与传承项目</p>
+                <p>版权所有 | 敦煌研究院 合作项目</p>
+            </div>
+            
+            <div class="footer-links">
+                <a href="#"><i class="fas fa-info-circle"></i> 关于我们</a>
+                <a href="#"><i class="fas fa-envelope"></i> 联系我们</a>
+                <a href="#"><i class="fas fa-shield-alt"></i> 隐私政策</a>
+                <a href="#"><i class="fas fa-file-alt"></i> 使用条款</a>
+            </div>
+            
+            <div class="social-links">
+                <a href="#"><i class="fab fa-weixin"></i></a>
+                <a href="#"><i class="fab fa-weibo"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fas fa-rss"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
